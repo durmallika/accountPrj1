@@ -1,0 +1,9 @@
+/* use this file to change the look of the app-compo-html template file... */
+ /* . represents class name */
+
+.rocket{
+
+    color:rgb(200, 23, 123);
+    font-weight: bold;
+    font-size: 30px;
+}

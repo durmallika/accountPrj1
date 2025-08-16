@@ -1,0 +1,40 @@
+<header style="background-color: rgb(212, 0, 255); height: 30pt;"> 
+</header>
+
+<!-- div tag contains - the content -->
+<div class="container">
+    <h1>Hey!!! Learning Angular!!!</h1>
+    <img src="https://media.istockphoto.com/id/875189678/photo/rear-view-of-high-school-students-attending-a-class.jpg?s=612x612&w=0&k=20&c=44aCG_wmp30Pfxh2s3W8ARLYxQ_KAXXJ2saQSRKaahU=" style="height: 300px;"/>
+    <img src="https://media.istockphoto.com/id/875189678/photo/rear-view-of-high-school-students-attending-a-class.jpg?s=612x612&w=0&k=20&c=44aCG_wmp30Pfxh2s3W8ARLYxQ_KAXXJ2saQSRKaahU=" style="height: 300px;"/>
+
+<hr style="color:rgb(225, 18, 18); height: 10px; ">
+
+<div class="form-group">
+      <label><b>Number Please : {{title}} </b></label>
+      <!-- <input type="text" name="pnum" class="form-control" style="width: 50% ;"/> <br> -->
+
+      <!-- we r passing the 'mallika'-  'template reference variable ' here with hashTag + some-name, '#mallika' -->
+      <input #mallika type="text" name="pnum" class="form-control" style="width: 50% ;"/>
+
+</div>
+
+<div class="form-group">
+  <!-- <button CLASS="btn btn-primary"  (click)="compute()">COMPUTE</button> <br> -->
+  <button CLASS="btn btn-primary"  (click)="compute(mallika)">COMPUTE</button>
+
+</div>
+
+<div class="form-group">
+ <span style="color: teal; font-size: 20px;">Coming Soon!  {{title}}</span> <br>
+ <span style="color: rgb(45, 0, 128); font-size: 20px;">Result is:  {{result}}</span> <br>
+
+ <span class= "rocket">Result is:  {{result}}</span>
+ 
+
+</div>
+
+</div>
+
+<!-- NOTE: We are working on root component of the project, we can create the our own component also.... to work on... -->
+
+<router-outlet></router-outlet>
